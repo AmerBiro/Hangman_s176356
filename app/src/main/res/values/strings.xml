@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Hangman_s176356</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <dimen name="title">45dp</dimen>
+    <dimen name="wordToBeGuessed">40dp</dimen>
+    <dimen name="input">20dp</dimen>
+    <dimen name="lettersTried">30dp</dimen>
+    <dimen name="triesLeft">30dp</dimen>
+    <dimen name="reset">30dp</dimen>
+
+    <string-array name="pr_la">
+        <item>C++ </item>
+        <item>C# </item>
+        <item>Java </item>
+        <item>JavaScript </item>
+        <item>Kotlin </item>
+        <item>Puthon </item>
+        <item>Ruby </item>
+        <item>Swift </item>
+        <item>TypeScript </item>
+        <item>Visual Studio </item>
+    </string-array>
+
+    <string-array name="dis">
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+        <item>Description </item>
+    </string-array>
+</resources>

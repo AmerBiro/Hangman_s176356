@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    tools:context=".Game_Logic.Hangman_Logic">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/galge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+
+
+    <TextView
+        android:id="@+id/gusse"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Guess me ㋡"
+        android:textSize="36sp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:columnCount="8"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+
+        <Button
+            android:id="@+id/a_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="A"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/b_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="B"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/c_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="C"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/d_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="D"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/e_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="E"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/f_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="F"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/g_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="G"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/h_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="H"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/i_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="I"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/j_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="J"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/k_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="K"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/l_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="L"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/m_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="M"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/n_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="N"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/o_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="O"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/p_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="1"
+            android:layout_column="7"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="P"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/q_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="Q"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/r_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="R"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/s_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="S"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/t_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="T"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/u_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="U"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/v_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="5"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="V"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/w_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="6"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="W"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/x_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="2"
+            android:layout_column="7"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="X"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/y_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="Y"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/z_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="Z"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/ao_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="å"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/ae_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="Æ"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/oe_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="43dp"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:width="8dp"
+            android:background="@drawable/button_shape"
+            android:onClick="onClick"
+            android:text="Ø"
+            android:textColor="@color/white" />
+
+    </GridLayout>
+
+
+
+</LinearLayout>

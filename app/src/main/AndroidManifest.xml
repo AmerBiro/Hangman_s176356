@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hangman_s176356">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Game_Body.ChildPlayerView"
+            android:parentActivityName=".MainActivity"
+            android:label="Back"/>
+        <activity android:name=".Game_Logic.Hangman_Logic" />
+        <activity android:name=".Game_Logic.Logic" />
+        <activity android:name=".End_Game_Body.Lose_Game" />
+        <activity android:name=".End_Game_Body.Won_Game" />
+        <activity android:name=".End_Game_Body.End_Game" />
+        <activity android:name=".Start_Body.Start_Page_03_Loading" />
+        <activity android:name=".Start_Body.Start_Page_02" />
+        <activity android:name=".Start_Body.Start_Page_01" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
