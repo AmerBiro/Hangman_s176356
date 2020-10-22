@@ -19,14 +19,14 @@
         <activity android:name=".End_Game_Body.End_Game" />
         <activity android:name=".Start_Body.Start_Page_03_Loading" />
         <activity android:name=".Start_Body.Start_Page_02" />
-        <activity android:name=".Start_Body.Start_Page_01" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Start_Body.Start_Page_01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

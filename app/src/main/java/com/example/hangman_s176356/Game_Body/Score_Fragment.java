@@ -51,11 +51,11 @@ public class Score_Fragment extends Fragment {
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        LinearLayoutManager layoutManager
-                = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
-
-        RecyclerView myList = view.findViewById(R.id.row_Layout);
-        recyclerView.setLayoutManager(layoutManager);
+//        LinearLayoutManager layoutManager
+//                = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+//
+//        RecyclerView myList = view.findViewById(R.id.row_Layout);
+//        recyclerView.setLayoutManager(layoutManager);
 
         return view;
     }
