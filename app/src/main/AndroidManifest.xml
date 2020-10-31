@@ -9,24 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Game_Body.ChildPlayerView"
+        <activity android:name=".childpages.Page03_3_ChildScore"
             android:parentActivityName=".MainActivity"
             android:label="Back"/>
-        <activity android:name=".Game_Logic.Hangman_Logic" />
-        <activity android:name=".Game_Logic.Logic" />
-        <activity android:name=".End_Game_Body.Lose_Game" />
-        <activity android:name=".End_Game_Body.Won_Game" />
-        <activity android:name=".End_Game_Body.End_Game" />
-        <activity android:name=".Start_Body.Start_Page_03_Loading" />
-        <activity android:name=".Start_Body.Start_Page_02" />
-        <activity android:name=".Start_Body.Start_Page_01">
+        <activity android:name=".childpages.Page02_2_ChildGame" />
+        <activity android:name=".endgame.animation.Lose" />
+        <activity android:name=".endgame.animation.Won" />
+        <activity android:name=".endgame.NewGame" />
+        <activity android:name=".animation.Page_03_loading" />
+        <activity android:name=".animation.Page_02_hangman_ani" />
+        <activity android:name=".animation.Page_01_lottie">
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

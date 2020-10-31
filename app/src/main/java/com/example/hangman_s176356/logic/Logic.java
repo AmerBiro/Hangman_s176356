@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.Game_Logic;
+package com.example.hangman_s176356.logic;
 
 import java.io.BufferedReader;
 import java.io.IOException;

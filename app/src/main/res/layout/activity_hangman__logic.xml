@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/wallpaper"
-    tools:context=".Game_Logic.Hangman_Logic">
+    tools:context=".childpages.Page02_2_ChildGame">
 
     <ImageView
         android:id="@+id/imageView"

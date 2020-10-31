@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".End_Game_Body.Won_Game"
+    tools:context=".endgame.animation.Won"
     android:background="#000000">
 
     <com.airbnb.lottie.LottieAnimationView

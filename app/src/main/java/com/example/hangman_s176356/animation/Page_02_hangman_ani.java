@@ -1,19 +1,22 @@
-package com.example.hangman_s176356.Start_Body;
+package com.example.hangman_s176356.animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.hangman_s176356.MainActivity;
 import com.example.hangman_s176356.R;
+import com.example.hangman_s176356.databinding.ActivityStartPage02Binding;
 
-public class Start_Page_02 extends AppCompatActivity {
+public class Page_02_hangman_ani extends AppCompatActivity {
+    private ActivityStartPage02Binding binding;
+
 
     private static int SPLASH_SCREEB = 6000;
 
@@ -27,6 +30,11 @@ public class Start_Page_02 extends AppCompatActivity {
         setContentView(R.layout.activity_start__page_02);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+        binding = ActivityStartPage02Binding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
         rightToLeft = AnimationUtils.loadAnimation(this, R.anim.right_to_left);
         leftToRight01 = AnimationUtils.loadAnimation(this, R.anim.left_to_right_01);
         leftToRight02 = AnimationUtils.loadAnimation(this, R.anim.left_to_right_02);
@@ -36,32 +44,22 @@ public class Start_Page_02 extends AppCompatActivity {
         leftToRight06 = AnimationUtils.loadAnimation(this, R.anim.left_to_right_06);
         leftToRight07 = AnimationUtils.loadAnimation(this, R.anim.left_to_right_07);
 
-        logo = findViewById(R.id.logo);
-        h = findViewById(R.id.h);
-        a = findViewById(R.id.a);
-        n = findViewById(R.id.n);
-        g = findViewById(R.id.g);
-        m = findViewById(R.id.m);
-        aa = findViewById(R.id.aa);
-        nn = findViewById(R.id.nn);
-
-        logo.setAnimation(rightToLeft);
-        h.setAnimation(leftToRight01);
-        a.setAnimation(leftToRight02);
-        n.setAnimation(leftToRight03);
-        g.setAnimation(leftToRight04);
-        m.setAnimation(leftToRight05);
-        aa.setAnimation(leftToRight06);
-        nn.setAnimation(leftToRight07);
+        binding.logo.setAnimation(rightToLeft);
+        binding.h.setAnimation(leftToRight01);
+        binding.a.setAnimation(leftToRight02);
+        binding.n.setAnimation(leftToRight03);
+        binding.g.setAnimation(leftToRight04);
+        binding.m.setAnimation(leftToRight05);
+        binding.aa.setAnimation(leftToRight06);
+        binding.nn.setAnimation(leftToRight07);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Start_Page_02.this, Start_Page_03_Loading.class);
+                Intent intent = new Intent(Page_02_hangman_ani.this, Page_03_loading.class);
                 startActivity(intent);
                 finish();
             }
         },SPLASH_SCREEB);
-
     }
 }

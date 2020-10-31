@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.End_Game_Body;
+package com.example.hangman_s176356.endgame.animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,22 +8,24 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import com.example.hangman_s176356.R;
+import com.example.hangman_s176356.endgame.NewGame;
 
-public class Lose_Game extends AppCompatActivity {
+public class Won extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lose__game);
+        setContentView(R.layout.activity_won__game);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Lose_Game.this, End_Game.class);
+                Intent intent = new Intent(Won.this, NewGame.class);
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },7000);
     }
 }

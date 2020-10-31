@@ -1,20 +1,20 @@
-package com.example.hangman_s176356;
+package com.example.hangman_s176356.mainpage_fragments;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AddPlayer extends Fragment {
+import com.example.hangman_s176356.R;
+
+public class Page01_RulesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        View view =  inflater.inflate(R.layout.fragment_add_player, container, false);
-        return  view;
+        View view = inflater.inflate(R.layout.fragment_rules_, container, false);
+        return view;
     }
 }

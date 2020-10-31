@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.Game_Body;
+package com.example.hangman_s176356.adapters;
 
 
 import androidx.annotation.NonNull;
@@ -10,12 +10,12 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class MainPage_Fragments_Adapter extends FragmentPagerAdapter {
 
     private List<Fragment> fragments = new ArrayList<>();
     private List<String> fragmentTitle = new ArrayList<>();
 
-    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+    public MainPage_Fragments_Adapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
     }
 

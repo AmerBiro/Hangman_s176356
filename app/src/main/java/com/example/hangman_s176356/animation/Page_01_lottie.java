@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.Start_Body;
+package com.example.hangman_s176356.animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.view.WindowManager;
 
 import com.example.hangman_s176356.R;
 
-public class Start_Page_01 extends AppCompatActivity {
+public class Page_01_lottie extends AppCompatActivity {
 
     private static int SPLASH_SCREEB = 7500;
 
@@ -22,11 +22,10 @@ public class Start_Page_01 extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Start_Page_01.this, Start_Page_02.class);
+                Intent intent = new Intent(Page_01_lottie.this, Page_02_hangman_ani.class);
                 startActivity(intent);
                 finish();
             }
         },SPLASH_SCREEB);
-
     }
 }

@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.Game_Body;
+package com.example.hangman_s176356.logic;
 
 public class Player {
     String playerName;

@@ -1,56 +1,50 @@
 package com.example.hangman_s176356;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.WindowManager;
-import android.widget.Toolbar;
+import android.view.View;
 
-import com.example.hangman_s176356.Game_Body.*;
-import com.example.hangman_s176356.Start_Body.*;
+import com.example.hangman_s176356.adapters.MainPage_Fragments_Adapter;
+import com.example.hangman_s176356.databinding.ActivityMainBinding;
+import com.example.hangman_s176356.mainpage_fragments.Page01_RulesFragment;
+import com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment;
+import com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
 
-    private ViewPager viewPager;
-    private TabLayout tabLayout;
-
-
-    private Rules_Fragment rules_fragment;
-    private Game_Fragment game_fragment;
-    private Score_Fragment score_fragment;
-
+    private Page01_RulesFragment page01Rules_fragment;
+    private Page02_GameFragment page02Game_fragment;
+    private Page03_ScoreFragment page03Score_fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
-        viewPager = findViewById(R.id.view_pager);
-        tabLayout = findViewById(R.id.tab_layut);
+        page01Rules_fragment = new Page01_RulesFragment();
+        page02Game_fragment = new Page02_GameFragment();
+        page03Score_fragment = new Page03_ScoreFragment();
 
+        binding.tabLayut.setupWithViewPager(binding.viewPager);
+        MainPage_Fragments_Adapter mainPageAdapter = new MainPage_Fragments_Adapter(getSupportFragmentManager(), 0);
 
-        rules_fragment = new Rules_Fragment();
-        game_fragment = new Game_Fragment();
-        score_fragment = new Score_Fragment();
+        mainPageAdapter.addFragment(page01Rules_fragment, "Rules");
+        mainPageAdapter.addFragment(page02Game_fragment, "Game");
+        mainPageAdapter.addFragment(page03Score_fragment, "Score");
 
-        tabLayout.setupWithViewPager(viewPager);
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
-
-        viewPagerAdapter.addFragment(rules_fragment, "Rules");
-        viewPagerAdapter.addFragment(game_fragment, "Game");
-        viewPagerAdapter.addFragment(score_fragment, "Score");
-
-        viewPager.setAdapter(viewPagerAdapter);
-        viewPager.setCurrentItem(1);
-        tabLayout.getTabAt(0).setIcon(R.drawable.rules);
-        tabLayout.getTabAt(1).setIcon(R.drawable.game);
-        tabLayout.getTabAt(2).setIcon(R.drawable.score);
+        binding.viewPager.setAdapter(mainPageAdapter);
+        binding.viewPager.setCurrentItem(1);
+        binding.tabLayut.getTabAt(0).setIcon(R.drawable.rules);
+        binding.tabLayut.getTabAt(1).setIcon(R.drawable.game);
+        binding.tabLayut.getTabAt(2).setIcon(R.drawable.score);
 ////////////////////////////////////////////////////////////////////////////////
 
     }

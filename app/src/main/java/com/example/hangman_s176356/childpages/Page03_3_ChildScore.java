@@ -1,17 +1,17 @@
-package com.example.hangman_s176356.Game_Body;
+package com.example.hangman_s176356.childpages;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hangman_s176356.*;
+import com.example.hangman_s176356.databinding.ActivityChildPlayerViewBinding;
 
-public class ChildPlayerView extends AppCompatActivity {
-
-    ImageView childPlayerIcon;
-    TextView childPlayerName, childPlayerAge, childPlayerScore;
+public class Page03_3_ChildScore extends AppCompatActivity {
+    private ActivityChildPlayerViewBinding binding;
 
     String playerName;
     int playerAge, playerScore, playerIcon;
@@ -21,10 +21,10 @@ public class ChildPlayerView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child_player_view);
 
-        childPlayerIcon = findViewById(R.id.playerChildIcon);
-        childPlayerScore = findViewById(R.id.playerChildScore);
-        childPlayerAge = findViewById(R.id.playerChildAge);
-        childPlayerName = findViewById(R.id.playerChildName);
+
+        binding = ActivityChildPlayerViewBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         getData();
         setData();
@@ -43,9 +43,9 @@ public class ChildPlayerView extends AppCompatActivity {
     }
 
     private void setData(){
-        childPlayerName.setText("" + playerName);
-        childPlayerScore.setText("" + playerScore);
-        childPlayerAge.setText("" + playerAge);
-        childPlayerIcon.setImageResource(playerIcon);
+        binding.playerChildName.setText("" + playerName);
+        binding.playerChildScore.setText("" + playerScore);
+        binding.playerChildAge.setText("" + playerAge);
+        binding.playerChildIcon.setImageResource(playerIcon);
     }
 }

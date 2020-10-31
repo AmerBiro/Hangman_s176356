@@ -1,27 +1,23 @@
-package com.example.hangman_s176356.Game_Logic;
+package com.example.hangman_s176356.childpages;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hangman_s176356.*;
-import com.example.hangman_s176356.End_Game_Body.Lose_Game;
-import com.example.hangman_s176356.End_Game_Body.Won_Game;
+import com.example.hangman_s176356.databinding.ActivityHangmanLogicBinding;
+import com.example.hangman_s176356.endgame.animation.Lose;
+import com.example.hangman_s176356.endgame.animation.Won;
+import com.example.hangman_s176356.logic.Logic;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class Hangman_Logic extends AppCompatActivity implements View.OnClickListener {
-
+public class Page02_2_ChildGame extends AppCompatActivity implements View.OnClickListener {
+    private ActivityHangmanLogicBinding binding;
     private Logic logic = new Logic();
 
-    ImageView imageView;
-    TextView textView;
-    GridLayout gridLayout;
     Button button;
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
@@ -33,10 +29,11 @@ public class Hangman_Logic extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hangman__logic);
 
-        imageView = findViewById(R.id.imageView);
-        imageView.setVisibility(View.INVISIBLE);
-        textView = findViewById(R.id.gusse);
-        gridLayout = findViewById(R.id.gridLayout);
+        binding = ActivityHangmanLogicBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        binding.imageView.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -50,37 +47,37 @@ public class Hangman_Logic extends AppCompatActivity implements View.OnClickList
     private void clickMe(Button button){
         String myLetter = (button.getText().toString().toLowerCase());
         logic.gætBogstav(myLetter);
-        imageView.setVisibility(View.VISIBLE);
-        textView.setText(logic.getSynligtOrd());
+        binding.imageView.setVisibility(View.VISIBLE);
+        binding.gusse.setText(logic.getSynligtOrd());
         button.setVisibility(View.INVISIBLE);
 
         switch (logic.getAntalForkerteBogstaver()){
             case 1:
-                imageView.setImageResource(R.drawable.galge);
+                binding.imageView.setImageResource(R.drawable.galge);
                 break;
             case 2:
-                imageView.setImageResource(R.drawable.forkert1);
+                binding.imageView.setImageResource(R.drawable.forkert1);
                 break;
             case 3:
-                imageView.setImageResource(R.drawable.forkert2);
+                binding.imageView.setImageResource(R.drawable.forkert2);
                 break;
             case 4:
-                imageView.setImageResource(R.drawable.forkert3);
+                binding.imageView.setImageResource(R.drawable.forkert3);
                 break;
             case 5:
-                imageView.setImageResource(R.drawable.forkert4);
+                binding.imageView.setImageResource(R.drawable.forkert4);
                 break;
             case 6:
-                imageView.setImageResource(R.drawable.forkert5);
+                binding.imageView.setImageResource(R.drawable.forkert5);
                 break;
             case 7:
-                imageView.setImageResource(R.drawable.forkert6);
+                binding.imageView.setImageResource(R.drawable.forkert6);
                 break;
             default:
                 break;
         }
         if (logic.erSpilletVundet()){
-            Intent intent = new Intent(Hangman_Logic.this, Won_Game.class);
+            Intent intent = new Intent(Page02_2_ChildGame.this, Won.class);
             startActivity(intent);
             finish();
         }else if (logic.erSpilletTabt()){
@@ -88,7 +85,7 @@ public class Hangman_Logic extends AppCompatActivity implements View.OnClickList
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(Hangman_Logic.this, Lose_Game.class);
+                    Intent intent = new Intent(Page02_2_ChildGame.this, Lose.class);
                     startActivity(intent);
                     finish();
                 }

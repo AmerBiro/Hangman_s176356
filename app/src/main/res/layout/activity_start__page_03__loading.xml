@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Start_Body.Start_Page_03_Loading"
+    tools:context=".animation.Page_03_loading"
     android:background="#000000">
 
     <pl.droidsonroids.gif.GifImageView

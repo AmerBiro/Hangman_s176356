@@ -1,19 +1,20 @@
-package com.example.hangman_s176356.Game_Body;
+package com.example.hangman_s176356.mainpage_fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.hangman_s176356.R;
+import com.example.hangman_s176356.logic.Player;
+import com.example.hangman_s176356.adapters.Score_RecyclerView_Adapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Score_Fragment extends Fragment {
+public class Page03_ScoreFragment extends Fragment {
 
     RecyclerView recyclerView;
     List<Player> playerList;
@@ -47,8 +48,8 @@ public class Score_Fragment extends Fragment {
         playerList.add(player9);
         playerList.add(player10);
 
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), playerList);
-        recyclerView.setAdapter(recyclerViewAdapter);
+        Score_RecyclerView_Adapter scoreAdapter = new Score_RecyclerView_Adapter(getActivity(), playerList);
+        recyclerView.setAdapter(scoreAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 //        LinearLayoutManager layoutManager
