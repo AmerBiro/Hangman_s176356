@@ -8,19 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".childpages.Page03_3_ChildScore"
-            android:parentActivityName=".MainActivity"
-            android:label="Back"/>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".childpages.Page02_2_ChildGame" />
         <activity android:name=".endgame.animation.Lose" />
         <activity android:name=".endgame.animation.Won" />
         <activity android:name=".endgame.NewGame" />
+        <activity android:name=".player.CreatePlayer" />
+        <activity android:name=".player.UpdatePlayer" />
         <activity android:name=".animation.Page_03_loading" />
         <activity android:name=".animation.Page_02_hangman_ani" />
-        <activity android:name=".animation.Page_01_lottie">
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".animation.Page_01_lottie"></activity>
+        <activity android:name=".MainPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

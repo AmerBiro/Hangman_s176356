@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-import com.example.hangman_s176356.MainActivity;
+import com.example.hangman_s176356.MainPage;
 import com.example.hangman_s176356.R;
 
 public class Page_03_loading extends AppCompatActivity {
@@ -21,7 +21,7 @@ public class Page_03_loading extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Page_03_loading.this, MainActivity.class);
+                Intent intent = new Intent(Page_03_loading.this, MainPage.class);
                 startActivity(intent);
                 finish();
             }

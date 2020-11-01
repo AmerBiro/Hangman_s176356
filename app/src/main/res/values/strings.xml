@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hangman_s176356</string>
+    <string name="app_name">s176356 Amer Biro Hangman</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <dimen name="title">45dp</dimen>

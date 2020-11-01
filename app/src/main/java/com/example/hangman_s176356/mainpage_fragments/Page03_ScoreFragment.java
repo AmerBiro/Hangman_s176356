@@ -1,63 +1,126 @@
 package com.example.hangman_s176356.mainpage_fragments;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+
+import com.example.hangman_s176356.MainPage;
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.logic.Player;
-import com.example.hangman_s176356.adapters.Score_RecyclerView_Adapter;
+import com.example.hangman_s176356.adapters.Player_Adapter;
+import com.example.hangman_s176356.databinding.FragmentScoreBinding;
+import com.example.hangman_s176356.database.Player;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Page03_ScoreFragment extends Fragment {
+    private FragmentScoreBinding binding;
 
-    RecyclerView recyclerView;
-    List<Player> playerList;
-    String playerName[];
-    int playerScore[], playerAge[], playerIcon[];
+    Player myDB;
+    ArrayList<String> playerId, playerName, playerBirthDate, playerScore;
+    Player_Adapter playerAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_score_, container, false);
-        recyclerView = view.findViewById(R.id.rv);
+        binding = FragmentScoreBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
 
-        playerList = new ArrayList<>();
-        Player player1 = new Player("Amer", 13, 100, R.drawable.player);
-        Player player2 = new Player("Sulaiman", 14, 100, R.drawable.player);
-        Player player3 = new Player("Hero", 29, 100, R.drawable.player);
-        Player player4 = new Player("Zero", 26, 100, R.drawable.player);
-        Player player5 = new Player("Jackson", 15, 100, R.drawable.player);
-        Player player6 = new Player("Mario", 7, 100, R.drawable.player);
-        Player player7 = new Player("Fire", 13, 100, R.drawable.player);
-        Player player8 = new Player("Hire", 8, 100, R.drawable.player);
-        Player player9 = new Player("NoWay", 24, 100, R.drawable.player);
-        Player player10 = new Player("Sho Sho", 27, 100, R.drawable.player);
-        playerList.add(player1);
-        playerList.add(player2);
-        playerList.add(player3);
-        playerList.add(player4);
-        playerList.add(player5);
-        playerList.add(player6);
-        playerList.add(player7);
-        playerList.add(player8);
-        playerList.add(player9);
-        playerList.add(player10);
 
-        Score_RecyclerView_Adapter scoreAdapter = new Score_RecyclerView_Adapter(getActivity(), playerList);
-        recyclerView.setAdapter(scoreAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-//        LinearLayoutManager layoutManager
-//                = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
-//
-//        RecyclerView myList = view.findViewById(R.id.row_Layout);
-//        recyclerView.setLayoutManager(layoutManager);
+        myDB = new Player(getActivity());
+        playerId = new ArrayList<>();
+        playerName = new ArrayList<>();
+        playerBirthDate = new ArrayList<>();
+        playerScore = new ArrayList<>();
+
+        storeDataInArrays();
+
+        playerAdapter = new Player_Adapter(getActivity(),getContext(), playerId, playerName, playerBirthDate,
+                playerScore);
+        binding.scoreRecyclerView.setAdapter(playerAdapter);
+        binding.scoreRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         return view;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1){
+            getActivity().recreate();
+        }
+    }
+
+
+    void storeDataInArrays(){
+        Cursor cursor = myDB.readAllData();
+        if(cursor.getCount() == 0){
+            binding.emptyImageview.setVisibility(View.VISIBLE);
+            binding.noData.setVisibility(View.VISIBLE);
+        }else{
+            while (cursor.moveToNext()){
+                playerId.add(cursor.getString(0));
+                playerName.add(cursor.getString(1));
+                playerBirthDate.add(cursor.getString(2));
+                playerScore.add(cursor.getString(3));
+            }
+            binding.emptyImageview.setVisibility(View.GONE);
+            binding.noData.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.delete_all){
+            confirmDialog();
+            return super.onOptionsItemSelected(item);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        MenuInflater menuInflater = getActivity().getMenuInflater();
+        menuInflater.inflate(R.menu.my_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    void confirmDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Delete All?");
+        builder.setMessage("Are you sure you want to delete all Data?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Player myDB = new Player(getActivity());
+                myDB.deleteAllData();
+                //Refresh Activity
+                Intent intent = new Intent(getActivity(), MainPage.class);
+                startActivity(intent);
+                getActivity().finish();
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.create().show();
     }
 }
