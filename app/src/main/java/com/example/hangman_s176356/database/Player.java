@@ -10,14 +10,14 @@ import androidx.annotation.Nullable;
 public class Player extends SQLiteOpenHelper {
 
     private Context context;
-    private static final String DATABASE_NAME = "player_list.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final String DATABASE_NAME = "BookLibrary.db";
+    private static final int DATABASE_VERSION = 1;
 
-   private static final String TABLE_NAME = "player_list";
-   private static final String COLUMN_PLAYER_ID = "player_id";
-   private static final String COLUMN_PLAYER_NAME = "book_title";
-   private static final String COLUMN_PLAYER_BIRTH_DATE = "book_author";
-   private static final String COLUMN_PLAYER_SCORE = "book_pages";
+    private static final String TABLE_NAME = "my_library";
+    private static final String COLUMN_ID = "_id";
+    private static final String COLUMN_TITLE = "book_title";
+    private static final String COLUMN_AUTHOR = "book_author";
+    private static final String COLUMN_PAGES = "book_pages";
 
     public Player(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -28,10 +28,10 @@ public class Player extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String query = 
                 "CREATE TABLE " + TABLE_NAME +
-            " (" + COLUMN_PLAYER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + 
-                    COLUMN_PLAYER_NAME + " TEXT, " +
-                COLUMN_PLAYER_BIRTH_DATE + " TEXT, " +
-                COLUMN_PLAYER_SCORE + " INTEGER);";
+            " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                        COLUMN_TITLE + " TEXT, " +
+                        COLUMN_AUTHOR + " TEXT, " +
+                        COLUMN_PAGES + " INTEGER);";
         db.execSQL(query);
     }
 
@@ -45,9 +45,9 @@ public class Player extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(COLUMN_PLAYER_NAME, playerName);
-        cv.put(COLUMN_PLAYER_BIRTH_DATE, playerBirthDate);
-        cv.put(COLUMN_PLAYER_SCORE, playerScore);
+        cv.put(COLUMN_TITLE, playerName);
+        cv.put(COLUMN_AUTHOR, playerBirthDate);
+        cv.put(COLUMN_PAGES, playerScore);
         long result = db.insert(TABLE_NAME,null, cv);
         if(result == -1){
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
@@ -70,9 +70,9 @@ public class Player extends SQLiteOpenHelper {
     public void updateData(String row_id, String playerName, String playerBirthDate, String playerScore){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_PLAYER_NAME, playerName);
-        cv.put(COLUMN_PLAYER_BIRTH_DATE, playerBirthDate);
-        cv.put(COLUMN_PLAYER_SCORE, playerScore);
+        cv.put(COLUMN_TITLE, playerName);
+        cv.put(COLUMN_AUTHOR, playerBirthDate);
+        cv.put(COLUMN_PAGES, playerScore);
 
         long result = db.update(TABLE_NAME, cv, "_id=?", new String[]{row_id});
         if(result == -1){
