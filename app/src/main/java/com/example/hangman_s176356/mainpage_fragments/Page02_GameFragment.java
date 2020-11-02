@@ -6,24 +6,24 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.hangman_s176356.childpages.Page02_2_ChildGame;
-import com.example.hangman_s176356.databinding.FragmentGameBinding;
+import com.example.hangman_s176356.childpages.HangmanGame;
+import com.example.hangman_s176356.databinding.FragmentPage02GamefragmentBinding;
 import com.example.hangman_s176356.player.CreatePlayer;
 
 public class Page02_GameFragment extends Fragment {
-    private FragmentGameBinding binding;
+    private FragmentPage02GamefragmentBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        View view = inflater.inflate(R.layout.fragment_game_, container, false);
 
-        binding = FragmentGameBinding.inflate(getLayoutInflater());
+        binding = FragmentPage02GamefragmentBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
 
         binding.startGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Page02_2_ChildGame.class);
+                Intent intent = new Intent(getActivity(), HangmanGame.class);
                 startActivity(intent);
             }
         });

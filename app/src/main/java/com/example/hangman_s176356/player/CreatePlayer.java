@@ -14,9 +14,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.hangman_s176356.MainPage;
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.databinding.ActivityCreatePlayerBinding;
+import com.example.hangman_s176356.childpages.HangmanGame;
+import com.example.hangman_s176356.databinding.PlayerCreatePlayerBinding;
 import com.example.hangman_s176356.logic.DatePicker;
 import com.example.hangman_s176356.database.Player;
 
@@ -25,19 +25,22 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class CreatePlayer extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
-    private ActivityCreatePlayerBinding binding;
+    private PlayerCreatePlayerBinding binding;
     private static final int PICK_IMAGE = 1;
     Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_player);
+        setContentView(R.layout.player_create_player);
 
-        binding = ActivityCreatePlayerBinding.inflate(getLayoutInflater());
+        binding = PlayerCreatePlayerBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
+        binding.playerBirthDate.setClickable(false);
+        binding.playerScore.setEnabled(false);
+        binding.playerScore.setText("100");
         binding.createPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,15 +55,18 @@ public class CreatePlayer extends AppCompatActivity implements DatePickerDialog.
                     binding.playerBirthDate.getText().toString().trim(),
                     Integer.valueOf(binding.playerScore.getText().toString().trim()));
 
-                    Intent intent = new Intent(CreatePlayer.this, MainPage.class);
+                    Intent intent = new Intent(CreatePlayer.this, HangmanGame.class);
+                    intent.putExtra("playerName", String.valueOf(binding.playerName.getText().toString()));
+                    intent.putExtra("playerScore", String.valueOf(binding.playerScore.getText().toString()));
+                    startActivityForResult(intent, 1);
+
                     startActivity(intent);
                     finish();
-                    Toast.makeText(CreatePlayer.this, "A new player is created", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
-        binding.playerImage.setOnClickListener(new View.OnClickListener() {
+        binding.playerScore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent gallery = new Intent();

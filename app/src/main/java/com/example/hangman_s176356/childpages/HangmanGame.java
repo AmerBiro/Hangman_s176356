@@ -2,7 +2,7 @@ package com.example.hangman_s176356.childpages;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hangman_s176356.*;
-import com.example.hangman_s176356.databinding.ActivityHangmanLogicBinding;
+import com.example.hangman_s176356.databinding.GameHangmanBinding;
 import com.example.hangman_s176356.endgame.animation.Lose;
 import com.example.hangman_s176356.endgame.animation.Won;
 import com.example.hangman_s176356.logic.Logic;
@@ -10,13 +10,17 @@ import com.example.hangman_s176356.logic.Logic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Page02_2_ChildGame extends AppCompatActivity implements View.OnClickListener {
-    private ActivityHangmanLogicBinding binding;
+public class HangmanGame extends AppCompatActivity implements View.OnClickListener {
+    private GameHangmanBinding binding;
+
     private Logic logic = new Logic();
+
+    String playerName, playerScore;
 
     Button button;
     @Override
@@ -27,14 +31,37 @@ public class Page02_2_ChildGame extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hangman__logic);
+        setContentView(R.layout.game_hangman);
 
-        binding = ActivityHangmanLogicBinding.inflate(getLayoutInflater());
+        binding = GameHangmanBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
         binding.imageView.setVisibility(View.INVISIBLE);
+
+        //First we call this
+        getAndSetIntentData();
+
     }
+
+    void getAndSetIntentData(){
+        if(getIntent().hasExtra("playerName") &&
+                getIntent().hasExtra("playerScore")){
+            //Getting Data from Intent
+            playerName = getIntent().getStringExtra("playerName");
+            playerScore = getIntent().getStringExtra("playerScore");
+
+            //Setting Intent Data
+            binding.playerName.setText(playerName);
+            binding.playerScore.setText(playerScore);
+            Log.d("stev", playerName +" "+  playerScore);
+        }else{
+            Toast.makeText(this, "No player has been created.", Toast.LENGTH_SHORT).show();
+            binding.playerName.setText("");
+            binding.playerScore.setText("");
+        }
+    }
+
 
     @Override
     public void onClick(View view) {
@@ -77,7 +104,7 @@ public class Page02_2_ChildGame extends AppCompatActivity implements View.OnClic
                 break;
         }
         if (logic.erSpilletVundet()){
-            Intent intent = new Intent(Page02_2_ChildGame.this, Won.class);
+            Intent intent = new Intent(HangmanGame.this, Won.class);
             startActivity(intent);
             finish();
         }else if (logic.erSpilletTabt()){
@@ -85,7 +112,7 @@ public class Page02_2_ChildGame extends AppCompatActivity implements View.OnClic
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(Page02_2_ChildGame.this, Lose.class);
+                    Intent intent = new Intent(HangmanGame.this, Lose.class);
                     startActivity(intent);
                     finish();
                 }

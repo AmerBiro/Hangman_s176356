@@ -12,11 +12,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.databinding.ActivityStartPage02Binding;
+import com.example.hangman_s176356.databinding.Animation01LottieBinding;
+import com.example.hangman_s176356.databinding.Animation02HangmanAniBinding;
 
 public class Page_02_hangman_ani extends AppCompatActivity {
-    private ActivityStartPage02Binding binding;
-
+    private Animation02HangmanAniBinding binding;
 
     private static int SPLASH_SCREEB = 6000;
 
@@ -27,11 +27,11 @@ public class Page_02_hangman_ani extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start__page_02);
+        setContentView(R.layout.animation_02_hangman_ani);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        binding = ActivityStartPage02Binding.inflate(getLayoutInflater());
+        binding = Animation02HangmanAniBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 

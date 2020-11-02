@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.hangman_s176356.adapters.MainPage_Fragments_Adapter;
-import com.example.hangman_s176356.databinding.ActivityHomePageBinding;
+import com.example.hangman_s176356.databinding.MainpageBinding;
 import com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment;
 import com.example.hangman_s176356.mainpage_fragments.Page01_RulesFragment;
 import com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment;
 
 public class MainPage extends AppCompatActivity {
-    private ActivityHomePageBinding binding;
+    private MainpageBinding binding;
 
     private Page01_RulesFragment page01Rules_fragment;
     private Page02_GameFragment page02Game_fragment;
@@ -21,9 +21,9 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.mainpage);
 
-        binding = ActivityHomePageBinding.inflate(getLayoutInflater());
+        binding = MainpageBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 

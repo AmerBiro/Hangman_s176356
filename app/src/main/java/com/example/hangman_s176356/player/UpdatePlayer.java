@@ -1,30 +1,32 @@
 package com.example.hangman_s176356.player;
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.databinding.ActivityUpdatePlayerBinding;
+import com.example.hangman_s176356.childpages.HangmanGame;
 import com.example.hangman_s176356.database.Player;
+import com.example.hangman_s176356.databinding.PlayerUpdatePlayerBinding;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 public class UpdatePlayer extends AppCompatActivity {
-    private ActivityUpdatePlayerBinding binding;
+    private PlayerUpdatePlayerBinding binding;
 
     String playerId, playerName, playerBirthDate, playerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update_player);
+        setContentView(R.layout.player_update_player);
 
 
-        binding = ActivityUpdatePlayerBinding.inflate(getLayoutInflater());
+        binding = PlayerUpdatePlayerBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
@@ -52,6 +54,17 @@ public class UpdatePlayer extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 confirmDialog();
+            }
+        });
+
+        binding.UPplayerScore.setEnabled(false);
+        binding.play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UpdatePlayer.this, HangmanGame.class);
+                intent.putExtra("playerName", String.valueOf(playerName));
+                intent.putExtra("playerScore", String.valueOf(playerScore));
+                startActivityForResult(intent, 1);
             }
         });
 

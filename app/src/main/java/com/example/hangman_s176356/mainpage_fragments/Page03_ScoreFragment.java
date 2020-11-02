@@ -22,14 +22,14 @@ import android.view.ViewGroup;
 import com.example.hangman_s176356.MainPage;
 import com.example.hangman_s176356.R;
 import com.example.hangman_s176356.adapters.Player_Adapter;
-import com.example.hangman_s176356.databinding.FragmentScoreBinding;
+import com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding;
 import com.example.hangman_s176356.database.Player;
 
 import java.util.ArrayList;
 
 
 public class Page03_ScoreFragment extends Fragment {
-    private FragmentScoreBinding binding;
+    private FragmentPage03ScorefragmentBinding binding;
 
     Player myDB;
     ArrayList<String> playerId, playerName, playerBirthDate, playerScore;
@@ -37,7 +37,7 @@ public class Page03_ScoreFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentScoreBinding.inflate(getLayoutInflater());
+        binding = FragmentPage03ScorefragmentBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
 
 
@@ -54,6 +54,8 @@ public class Page03_ScoreFragment extends Fragment {
                 playerScore);
         binding.scoreRecyclerView.setAdapter(playerAdapter);
         binding.scoreRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+
 
         return view;
     }

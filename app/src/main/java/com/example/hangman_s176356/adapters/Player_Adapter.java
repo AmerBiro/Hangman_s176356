@@ -21,7 +21,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHolder> {
-
     private Context context;
     private Activity activity;
     private ArrayList playerId, playerName, playerBirthDate, playerScore;
@@ -40,7 +39,8 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row, parent, false);
+        View view = inflater.inflate(R.layout.player_adapter_player_list, parent, false);
+
         return new MyViewHolder(view);
     }
 
@@ -65,6 +65,8 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHo
         });
 
 
+
+
     }
 
     @Override
@@ -76,6 +78,10 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHo
 
         TextView playerId, playerName, playerBirthDate, playerScore;
         LinearLayout player_Layout;
+
+        private Activity binding;
+
+
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -8,24 +8,23 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 
 import com.example.hangman_s176356.R;
 import com.example.hangman_s176356.animation.Page_03_loading;
-import com.example.hangman_s176356.databinding.ActivityEndGameBinding;
+import com.example.hangman_s176356.databinding.GameNewGameBinding;
 
 public class NewGame extends AppCompatActivity {
-    private ActivityEndGameBinding binding;
+    private GameNewGameBinding binding;
 
     Animation play_againANI, play_again_logoANI, yesANI, noANI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_end__game);
+        setContentView(R.layout.game_new_game);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        binding = ActivityEndGameBinding.inflate(getLayoutInflater());
+        binding = GameNewGameBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
