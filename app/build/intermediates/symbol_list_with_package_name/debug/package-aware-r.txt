@@ -2081,6 +2081,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id number_of
 id o_button
 id oe_button
 id off

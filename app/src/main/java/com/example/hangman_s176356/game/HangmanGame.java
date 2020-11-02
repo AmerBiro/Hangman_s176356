@@ -105,6 +105,7 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
         }
         if (logic.erSpilletVundet()){
             Intent intent = new Intent(HangmanGame.this, Won.class);
+            intent.putExtra("number_of", String.valueOf(logic.getAntalForkerteBogstaver()));
             startActivity(intent);
             finish();
         }else if (logic.erSpilletTabt()){
