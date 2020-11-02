@@ -12,10 +12,8 @@ com/example/hangman_s176356/databinding/PlayerUpdatePlayerBinding.java
  com.example.hangman_s176356.databinding.PlayerUpdatePlayerBinding
 com/example/hangman_s176356/databinding/GameHangmanBinding.java
  com.example.hangman_s176356.databinding.GameHangmanBinding
-com/example/hangman_s176356/mainpage_fragments/Page02_GameFragment.java
- com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment
- com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment$1
- com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment$2
+com/example/hangman_s176356/databinding/FragmentPage03ScorefragmentBinding.java
+ com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding
 com/example/hangman_s176356/MainPage.java
  com.example.hangman_s176356.MainPage
 com/example/hangman_s176356/endgame/animation/Lose.java
@@ -32,11 +30,9 @@ com/example/hangman_s176356/databinding/Animation02HangmanAniBinding.java
  com.example.hangman_s176356.databinding.Animation02HangmanAniBinding
 com/example/hangman_s176356/adapters/MainPage_Fragments_Adapter.java
  com.example.hangman_s176356.adapters.MainPage_Fragments_Adapter
-com/example/hangman_s176356/player/CreatePlayer.java
- com.example.hangman_s176356.player.CreatePlayer
- com.example.hangman_s176356.player.CreatePlayer$1
- com.example.hangman_s176356.player.CreatePlayer$2
- com.example.hangman_s176356.player.CreatePlayer$3
+com/example/hangman_s176356/endgame/animation/Won.java
+ com.example.hangman_s176356.endgame.animation.Won
+ com.example.hangman_s176356.endgame.animation.Won$1
 com/example/hangman_s176356/databinding/Animation03LoadingBinding.java
  com.example.hangman_s176356.databinding.Animation03LoadingBinding
 com/example/hangman_s176356/mainpage_fragments/Page01_RulesFragment.java
@@ -48,10 +44,8 @@ com/example/hangman_s176356/animation/Page_03_loading.java
  com.example.hangman_s176356.animation.Page_03_loading$1
 com/example/hangman_s176356/logic/Logic.java
  com.example.hangman_s176356.logic.Logic
-com/example/hangman_s176356/adapters/Player_Adapter.java
- com.example.hangman_s176356.adapters.Player_Adapter
- com.example.hangman_s176356.adapters.Player_Adapter$1
- com.example.hangman_s176356.adapters.Player_Adapter$MyViewHolder
+com/example/hangman_s176356/databinding/PlayerAdapterPlayerListBinding.java
+ com.example.hangman_s176356.databinding.PlayerAdapterPlayerListBinding
 com/example/hangman_s176356/databinding/FragmentPage01RulesfragmentBinding.java
  com.example.hangman_s176356.databinding.FragmentPage01RulesfragmentBinding
 com/example/hangman_s176356/BuildConfig.java
@@ -69,6 +63,10 @@ com/example/hangman_s176356/mainpage_fragments/Page03_ScoreFragment.java
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment$1
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment$2
+com/example/hangman_s176356/adapters/Player_Adapter.java
+ com.example.hangman_s176356.adapters.Player_Adapter
+ com.example.hangman_s176356.adapters.Player_Adapter$1
+ com.example.hangman_s176356.adapters.Player_Adapter$MyViewHolder
 com/example/hangman_s176356/player/UpdatePlayer.java
  com.example.hangman_s176356.player.UpdatePlayer
  com.example.hangman_s176356.player.UpdatePlayer$1
@@ -76,13 +74,15 @@ com/example/hangman_s176356/player/UpdatePlayer.java
  com.example.hangman_s176356.player.UpdatePlayer$3
  com.example.hangman_s176356.player.UpdatePlayer$4
  com.example.hangman_s176356.player.UpdatePlayer$5
-com/example/hangman_s176356/databinding/PlayerAdapterPlayerListBinding.java
- com.example.hangman_s176356.databinding.PlayerAdapterPlayerListBinding
-com/example/hangman_s176356/databinding/FragmentPage03ScorefragmentBinding.java
- com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding
 com/example/hangman_s176356/game/HangmanGame.java
  com.example.hangman_s176356.game.HangmanGame
  com.example.hangman_s176356.game.HangmanGame$1
-com/example/hangman_s176356/endgame/animation/Won.java
- com.example.hangman_s176356.endgame.animation.Won
- com.example.hangman_s176356.endgame.animation.Won$1
+com/example/hangman_s176356/mainpage_fragments/Page02_GameFragment.java
+ com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment
+ com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment$1
+ com.example.hangman_s176356.mainpage_fragments.Page02_GameFragment$2
+com/example/hangman_s176356/player/CreatePlayer.java
+ com.example.hangman_s176356.player.CreatePlayer
+ com.example.hangman_s176356.player.CreatePlayer$1
+ com.example.hangman_s176356.player.CreatePlayer$2
+ com.example.hangman_s176356.player.CreatePlayer$3

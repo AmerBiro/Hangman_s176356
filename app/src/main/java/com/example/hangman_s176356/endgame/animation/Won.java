@@ -15,7 +15,7 @@ import com.example.hangman_s176356.databinding.AnimationWonBinding;
 import com.example.hangman_s176356.endgame.NewGame;
 
 public class Won extends AppCompatActivity {
-    String number_of;
+    String number_of, playerScore;
     private AnimationWonBinding binding;
 
     @Override
@@ -43,12 +43,15 @@ public class Won extends AppCompatActivity {
 
 
     void getAndSetIntentData(){
-        if(getIntent().hasExtra("number_of")){
+        if(getIntent().hasExtra("number_of") &&
+                getIntent().hasExtra("playerScore")){
             //Getting Data from Intent
             number_of = getIntent().getStringExtra("number_of");
+            playerScore = getIntent().getStringExtra("playerScore");
 
             //Setting Intent Data
             binding.numberOf.setText(number_of + " times");
+            binding.playerScore.setText("Your new score is: " + playerScore);
             Log.d("stev", number_of);
         }else{
             Toast.makeText(this, "No number to show", Toast.LENGTH_SHORT).show();

@@ -2,10 +2,13 @@ package com.example.hangman_s176356.game;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hangman_s176356.*;
+import com.example.hangman_s176356.database.Player;
+import com.example.hangman_s176356.databinding.AnimationWonBinding;
 import com.example.hangman_s176356.databinding.GameHangmanBinding;
 import com.example.hangman_s176356.endgame.animation.Lose;
 import com.example.hangman_s176356.endgame.animation.Won;
 import com.example.hangman_s176356.logic.Logic;
+import com.example.hangman_s176356.player.UpdatePlayer;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +23,7 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
 
     private Logic logic = new Logic();
 
-    String playerName, playerScore;
+    String playerId, playerName, playerScore;
 
     Button button;
     @Override
@@ -50,6 +53,7 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
             //Getting Data from Intent
             playerName = getIntent().getStringExtra("playerName");
             playerScore = getIntent().getStringExtra("playerScore");
+            playerId = getIntent().getStringExtra("playerId");
 
             //Setting Intent Data
             binding.playerName.setText(playerName);
@@ -104,8 +108,23 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
                 break;
         }
         if (logic.erSpilletVundet()){
+
             Intent intent = new Intent(HangmanGame.this, Won.class);
             intent.putExtra("number_of", String.valueOf(logic.getAntalForkerteBogstaver()));
+            int score = Integer.parseInt(playerScore.trim());
+            score = score*2;
+            playerScore = Integer.toString(score);
+            intent.putExtra("playerScore", String.valueOf(playerScore));
+
+            Player myDB = new Player(HangmanGame.this);
+//            playerScore = binding.playerScore.getText().toString().trim();
+            myDB.updateScore(playerId, playerScore);
+
+//            //And only then we call this
+//            Player myDB = new Player(HangmanGame.this);
+//            playerScore = binding.playerScore.getText().toString().trim();
+//            myDB.updateScore(playerId, playerScore);
+
             startActivity(intent);
             finish();
         }else if (logic.erSpilletTabt()){
@@ -120,5 +139,6 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
                 }
             },2000);
         }
+
     }
 }
