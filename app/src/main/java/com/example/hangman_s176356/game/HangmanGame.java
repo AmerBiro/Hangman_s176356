@@ -120,11 +120,6 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
 //            playerScore = binding.playerScore.getText().toString().trim();
             myDB.updateScore(playerId, playerScore);
 
-//            //And only then we call this
-//            Player myDB = new Player(HangmanGame.this);
-//            playerScore = binding.playerScore.getText().toString().trim();
-//            myDB.updateScore(playerId, playerScore);
-
             startActivity(intent);
             finish();
         }else if (logic.erSpilletTabt()){
@@ -134,6 +129,14 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
                 public void run() {
                     Intent intent = new Intent(HangmanGame.this, Lose.class);
                     intent.putExtra("right_word", String.valueOf(logic.getOrdet()));
+                    int score = Integer.parseInt(playerScore.trim());
+                    score = score/2;
+                    playerScore = Integer.toString(score);
+                    intent.putExtra("playerScore", String.valueOf(playerScore));
+
+                    Player myDB = new Player(HangmanGame.this);
+                    myDB.updateScore(playerId, playerScore);
+
                     startActivity(intent);
                     finish();
                 }

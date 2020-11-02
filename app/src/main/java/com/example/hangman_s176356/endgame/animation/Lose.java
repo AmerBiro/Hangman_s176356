@@ -18,7 +18,7 @@ import com.example.hangman_s176356.logic.Logic;
 public class Lose extends AppCompatActivity {
     private AnimationLoseBinding binding;
     private Logic logic = new Logic();
-    String right_word;
+    String right_word, playerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +48,12 @@ public class Lose extends AppCompatActivity {
         if(getIntent().hasExtra("right_word")){
             //Getting Data from Intent
             right_word = getIntent().getStringExtra("right_word");
+            playerScore = getIntent().getStringExtra("playerScore");
 
             //Setting Intent Data
             binding.rightWord.setText(right_word);
+            binding.playerScore.setText("Your new score is: " + playerScore);
+
             Log.d("stev", right_word);
         }else{
             Toast.makeText(this, "No words to show", Toast.LENGTH_SHORT).show();
