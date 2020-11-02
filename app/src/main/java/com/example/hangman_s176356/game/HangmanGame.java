@@ -1,4 +1,4 @@
-package com.example.hangman_s176356.childpages;
+package com.example.hangman_s176356.game;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hangman_s176356.*;

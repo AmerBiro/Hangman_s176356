@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.childpages.HangmanGame;
+import com.example.hangman_s176356.game.HangmanGame;
 import com.example.hangman_s176356.databinding.PlayerCreatePlayerBinding;
 import com.example.hangman_s176356.logic.DatePicker;
 import com.example.hangman_s176356.database.Player;

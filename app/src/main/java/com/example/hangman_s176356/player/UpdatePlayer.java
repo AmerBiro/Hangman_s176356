@@ -1,6 +1,6 @@
 package com.example.hangman_s176356.player;
 import com.example.hangman_s176356.R;
-import com.example.hangman_s176356.childpages.HangmanGame;
+import com.example.hangman_s176356.game.HangmanGame;
 import com.example.hangman_s176356.database.Player;
 import com.example.hangman_s176356.databinding.PlayerUpdatePlayerBinding;
 

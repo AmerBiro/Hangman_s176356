@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.hangman_s176356.childpages.HangmanGame;
+import com.example.hangman_s176356.game.HangmanGame;
 import com.example.hangman_s176356.databinding.FragmentPage02GamefragmentBinding;
 import com.example.hangman_s176356.player.CreatePlayer;
 

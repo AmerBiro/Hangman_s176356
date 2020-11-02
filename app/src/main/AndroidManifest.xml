@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".childpages.HangmanGame"></activity>
+        <activity android:name=".game.HangmanGame"></activity>
         <activity android:name=".endgame.animation.Lose" />
         <activity android:name=".endgame.animation.Won" />
         <activity android:name=".endgame.NewGame" />
