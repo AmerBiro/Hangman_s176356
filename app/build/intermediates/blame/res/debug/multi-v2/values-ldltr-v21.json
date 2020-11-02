@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Biro\\.gradle\\caches\\transforms-2\\files-2.1\\50d5074462b5d1dca20809c366910a82\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

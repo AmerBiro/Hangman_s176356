@@ -5,12 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.example.hangman_s176356.R;
+import com.example.hangman_s176356.databinding.AnimationLoseBinding;
 import com.example.hangman_s176356.endgame.NewGame;
+import com.example.hangman_s176356.logic.Logic;
 
 public class Lose extends AppCompatActivity {
+    private AnimationLoseBinding binding;
+    private Logic logic = new Logic();
+    String right_word;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +26,13 @@ public class Lose extends AppCompatActivity {
         setContentView(R.layout.animation_lose);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+        binding = AnimationLoseBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        binding.rightWord.setText(logic.getSynligtOrd());
+        getAndSetIntentData();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -25,6 +40,22 @@ public class Lose extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },7000);
     }
+
+
+    void getAndSetIntentData(){
+        if(getIntent().hasExtra("right_word")){
+            //Getting Data from Intent
+            right_word = getIntent().getStringExtra("right_word");
+
+            //Setting Intent Data
+            binding.rightWord.setText(right_word);
+            Log.d("stev", right_word);
+        }else{
+            Toast.makeText(this, "No words to show", Toast.LENGTH_SHORT).show();
+            binding.rightWord.setText("");
+        }
+    }
+
 }

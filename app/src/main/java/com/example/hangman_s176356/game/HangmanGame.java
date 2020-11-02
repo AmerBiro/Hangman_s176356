@@ -113,6 +113,7 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
                 @Override
                 public void run() {
                     Intent intent = new Intent(HangmanGame.this, Lose.class);
+                    intent.putExtra("right_word", String.valueOf(logic.getOrdet()));
                     startActivity(intent);
                     finish();
                 }
