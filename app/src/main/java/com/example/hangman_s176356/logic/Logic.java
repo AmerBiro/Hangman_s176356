@@ -25,7 +25,7 @@ public class Logic {
     public Logic() {
         muligeOrd.add("bil");
 //        muligeOrd.add("computer");
-//        muligeOrd.add("programmering");
+        muligeOrd.add("programmering");
 //        muligeOrd.add("motorvej");
 //        muligeOrd.add("busrute");
 //        muligeOrd.add("gangsti");
@@ -77,7 +77,17 @@ public class Logic {
                 firstLastLetter[i] = '*';
             }
             return new String(firstLastLetter);
-        } else if (getOrdet().length() >= 4){
+        } else if (getOrdet().length() > 7){
+            firstLastLetter = new char[getOrdet().length()];
+            firstLastLetter[0] = getOrdet().charAt(0);
+            firstLastLetter[getOrdet().length() - 1] = getOrdet().charAt(getOrdet().length() - 1);
+            for (int i = 1; i < getOrdet().length() - 1; i++) {
+                firstLastLetter[i] = '*';
+            }
+            firstLastLetter[getOrdet().length()/2] = getOrdet().charAt(getOrdet().length()/2);
+            return new String(firstLastLetter);
+        }
+        else if (getOrdet().length() >= 4){
             firstLastLetter = new char[getOrdet().length()];
             firstLastLetter[0] = getOrdet().charAt(0);
             firstLastLetter[getOrdet().length() - 1] = getOrdet().charAt(getOrdet().length() - 1);
@@ -86,16 +96,7 @@ public class Logic {
             }
             return new String(firstLastLetter);
         }
-
-
-//            firstLastLetter = new char[getOrdet().length()];
-//            firstLastLetter[0] = getOrdet().charAt(0);
-//            firstLastLetter[getOrdet().length()-1] = getOrdet().charAt(getOrdet().length()-1);
-//            for (int i = 1; i<getOrdet().length()-1; i++){
-//                firstLastLetter[i] = '*';
-//            }
-//            return new String(firstLastLetter);
-        return "";
+        return null;
     }
 
 
