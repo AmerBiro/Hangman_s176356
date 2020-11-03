@@ -76,7 +76,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:columnCount="8"
-        android:onClick="onClick"
         android:orientation="horizontal"
         android:rowCount="4"
         app:layout_constraintBottom_toBottomOf="parent"

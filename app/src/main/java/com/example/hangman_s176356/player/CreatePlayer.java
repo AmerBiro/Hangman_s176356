@@ -28,6 +28,7 @@ public class CreatePlayer extends AppCompatActivity implements DatePickerDialog.
     private PlayerCreatePlayerBinding binding;
     private static final int PICK_IMAGE = 1;
     Uri imageUri;
+    String playerId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,17 +51,18 @@ public class CreatePlayer extends AppCompatActivity implements DatePickerDialog.
                                 TextUtils.isEmpty(binding.playerScore.getText().toString())){
                     Toast.makeText(CreatePlayer.this, "You must fill all the fields", Toast.LENGTH_SHORT).show();
                 } else {
+                    Intent intent = new Intent(CreatePlayer.this, HangmanGame.class);
+                    intent.putExtra("playerName", String.valueOf(binding.playerName.getText().toString()));
+                    intent.putExtra("playerScore", String.valueOf(binding.playerScore.getText().toString()));
+                    intent.putExtra("playerId", String.valueOf(playerId));
+
                     Player myDB = new Player(CreatePlayer.this);
                     myDB.createPlayer(binding.playerName.getText().toString().trim(),
                     binding.playerBirthDate.getText().toString().trim(),
                     Integer.valueOf(binding.playerScore.getText().toString().trim()));
 
-                    Intent intent = new Intent(CreatePlayer.this, HangmanGame.class);
-                    intent.putExtra("playerName", String.valueOf(binding.playerName.getText().toString()));
-                    intent.putExtra("playerScore", String.valueOf(binding.playerScore.getText().toString()));
                     startActivityForResult(intent, 1);
 
-                    startActivity(intent);
                     finish();
                 }
             }

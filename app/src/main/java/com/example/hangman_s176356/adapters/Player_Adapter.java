@@ -76,7 +76,7 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHo
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView playerId, playerName, playerBirthDate, playerScore;
+        TextView  playerId, playerName, playerBirthDate, playerScore;
         LinearLayout player_Layout;
 
         private Activity binding;

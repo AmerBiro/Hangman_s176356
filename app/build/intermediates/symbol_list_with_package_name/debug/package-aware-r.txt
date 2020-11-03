@@ -1892,6 +1892,7 @@ id circular
 id clear_text
 id clip_horizontal
 id clip_vertical
+id close
 id collapseActionView
 id confirm_button
 id container
@@ -2073,7 +2074,6 @@ id nav_host_fragment_container
 id navigation_header_container
 id never
 id nn
-id no
 id noScroll
 id no_data
 id none
@@ -2102,8 +2102,7 @@ id peekHeight
 id percent
 id pin
 id play
-id play_again
-id play_again_logo
+id playAgain
 id playerBirthDate
 id playerId
 id playerImage
@@ -2255,7 +2254,6 @@ id wrap
 id wrap_content
 id x_button
 id y_button
-id yes
 id you_won
 id z_button
 id zero_corner_chip
@@ -2342,10 +2340,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_page01_rulesfragment
-layout fragment_page02_gamefragment
+layout fragment_page02_main_menufragment
 layout fragment_page03_scorefragment
 layout game_hangman
-layout game_new_game
 layout mainpage
 layout material_chip_input_combo
 layout material_clock_display

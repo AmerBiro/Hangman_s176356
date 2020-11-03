@@ -20,15 +20,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity android:name="com.example.hangman_s176356.game.HangmanGame" />
-        <activity android:name="com.example.hangman_s176356.endgame.animation.Lose" />
-        <activity android:name="com.example.hangman_s176356.endgame.animation.Won" />
+        <activity android:name="com.example.hangman_s176356.endgame.endgame.Lose" />
+        <activity android:name="com.example.hangman_s176356.endgame.endgame.Won" />
         <activity android:name="com.example.hangman_s176356.endgame.NewGame" />
         <activity android:name="com.example.hangman_s176356.player.CreatePlayer" />
         <activity android:name="com.example.hangman_s176356.player.UpdatePlayer" />
         <activity android:name="com.example.hangman_s176356.animation.Page_03_loading" />
         <activity android:name="com.example.hangman_s176356.animation.Page_02_hangman_ani" />
         <activity android:name="com.example.hangman_s176356.animation.Page_01_lottie" />
-        <activity android:name="com.example.hangman_s176356.MainPage" >
+        <activity android:name="com.example.hangman_s176356.main.MainPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

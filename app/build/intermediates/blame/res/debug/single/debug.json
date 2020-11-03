@@ -20,10 +20,6 @@
         "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\drawable-xhdpi\\nn.png"
     },
     {
-        "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\layout_game_new_game.xml.flat",
-        "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\layout\\game_new_game.xml"
-    },
-    {
         "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_galge.png.flat",
         "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\drawable-xxxhdpi\\galge.png"
     },
@@ -294,6 +290,10 @@
     {
         "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\layout_player_update_player.xml.flat",
         "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\layout\\player_update_player.xml"
+    },
+    {
+        "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_page02_main_menufragment.xml.flat",
+        "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\layout\\fragment_page02_main_menufragment.xml"
     },
     {
         "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi_h.png.flat",
@@ -662,10 +662,6 @@
     {
         "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_m.png.flat",
         "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\drawable-xxxhdpi\\m.png"
-    },
-    {
-        "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_page02_gamefragment.xml.flat",
-        "source": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\src\\main\\res\\layout\\fragment_page02_gamefragment.xml"
     },
     {
         "merged": "D:\\OneDrive - Danmarks Tekniske Universitet\\DTU\\3. semester\\#1 User experience and mobile application development\\Android Studio\\AndroidStudioProjects\\Hangman_s176356\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_forkert6.png.flat",

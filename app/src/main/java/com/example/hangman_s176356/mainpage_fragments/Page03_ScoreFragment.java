@@ -19,7 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.example.hangman_s176356.MainPage;
+import com.example.hangman_s176356.main.MainPage;
 import com.example.hangman_s176356.R;
 import com.example.hangman_s176356.adapters.Player_Adapter;
 import com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding;

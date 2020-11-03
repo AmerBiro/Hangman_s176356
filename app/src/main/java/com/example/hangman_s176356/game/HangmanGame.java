@@ -3,12 +3,11 @@ package com.example.hangman_s176356.game;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hangman_s176356.*;
 import com.example.hangman_s176356.database.Player;
-import com.example.hangman_s176356.databinding.AnimationWonBinding;
 import com.example.hangman_s176356.databinding.GameHangmanBinding;
-import com.example.hangman_s176356.endgame.animation.Lose;
-import com.example.hangman_s176356.endgame.animation.Won;
+import com.example.hangman_s176356.endgame.endgame.Lose;
+import com.example.hangman_s176356.endgame.endgame.Won;
 import com.example.hangman_s176356.logic.Logic;
-import com.example.hangman_s176356.player.UpdatePlayer;
+import com.example.hangman_s176356.main.MainPage;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -108,39 +107,55 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
                 break;
         }
         if (logic.erSpilletVundet()){
+            if (!getIntent().hasExtra("playerName") &&
+                    !getIntent().hasExtra("playerScore")){
+                Intent intent = new Intent(HangmanGame.this, MainPage.class);
+                Toast.makeText(this, "You've won!", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+                finish();
+            }else {
+                Intent intent = new Intent(HangmanGame.this, Won.class);
+                intent.putExtra("number_of", String.valueOf(logic.getAntalForkerteBogstaver()));
+                int score = Integer.parseInt(playerScore.trim());
+                score = score*2;
+                playerScore = Integer.toString(score);
+                intent.putExtra("playerScore", String.valueOf(playerScore));
 
-            Intent intent = new Intent(HangmanGame.this, Won.class);
-            intent.putExtra("number_of", String.valueOf(logic.getAntalForkerteBogstaver()));
-            int score = Integer.parseInt(playerScore.trim());
-            score = score*2;
-            playerScore = Integer.toString(score);
-            intent.putExtra("playerScore", String.valueOf(playerScore));
+                Player myDB = new Player(HangmanGame.this);
+                myDB.updateScore(playerId, playerScore);
 
-            Player myDB = new Player(HangmanGame.this);
-//            playerScore = binding.playerScore.getText().toString().trim();
-            myDB.updateScore(playerId, playerScore);
+                startActivity(intent);
+                finish();
+            }
 
-            startActivity(intent);
-            finish();
         }else if (logic.erSpilletTabt()){
-            Toast.makeText(getApplicationContext(), "Du er tabt og spillet er slut!", Toast.LENGTH_SHORT).show();
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent intent = new Intent(HangmanGame.this, Lose.class);
-                    intent.putExtra("right_word", String.valueOf(logic.getOrdet()));
-                    int score = Integer.parseInt(playerScore.trim());
-                    score = score/2;
-                    playerScore = Integer.toString(score);
-                    intent.putExtra("playerScore", String.valueOf(playerScore));
+            if (!getIntent().hasExtra("playerName") &&
+                    !getIntent().hasExtra("playerScore")){
+                Intent intent = new Intent(HangmanGame.this, MainPage.class);
+                Toast.makeText(this, "You've lost!", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+                finish();
+            }else{
+                Toast.makeText(getApplicationContext(), "Du er tabt og spillet er slut!", Toast.LENGTH_SHORT).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(HangmanGame.this, Lose.class);
+                        intent.putExtra("right_word", String.valueOf(logic.getOrdet()));
+                        int score = Integer.parseInt(playerScore.trim());
+                        score = score/2;
+                        playerScore = Integer.toString(score);
+                        intent.putExtra("playerScore", String.valueOf(playerScore));
 
-                    Player myDB = new Player(HangmanGame.this);
-                    myDB.updateScore(playerId, playerScore);
+                        Player myDB = new Player(HangmanGame.this);
+                        myDB.updateScore(playerId, playerScore);
 
-                    startActivity(intent);
-                    finish();
-                }
-            },2000);
+                        startActivity(intent);
+                        finish();
+                    }
+                },2000);
+            }
+
         }
 
     }

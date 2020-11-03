@@ -64,7 +64,6 @@ public class UpdatePlayer extends AppCompatActivity {
                 Intent intent = new Intent(UpdatePlayer.this, HangmanGame.class);
                 intent.putExtra("playerName", String.valueOf(playerName));
                 intent.putExtra("playerScore", String.valueOf(playerScore));
-
                 intent.putExtra("playerId", String.valueOf(playerId));
 
                 startActivityForResult(intent, 1);

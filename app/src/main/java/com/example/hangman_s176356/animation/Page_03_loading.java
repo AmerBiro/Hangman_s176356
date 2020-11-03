@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-import com.example.hangman_s176356.MainPage;
+import com.example.hangman_s176356.main.MainPage;
 import com.example.hangman_s176356.R;
 
 public class Page_03_loading extends AppCompatActivity {

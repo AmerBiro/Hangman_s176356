@@ -112,14 +112,14 @@ activity#com.example.hangman_s176356.game.HangmanGame
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:12:9-63
 	android:name
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:12:19-51
-activity#com.example.hangman_s176356.endgame.animation.Lose
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:13:9-60
+activity#com.example.hangman_s176356.endgame.endgame.Lose
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:13:9-58
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:13:19-57
-activity#com.example.hangman_s176356.endgame.animation.Won
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:9-59
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:13:19-55
+activity#com.example.hangman_s176356.endgame.endgame.Won
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:9-57
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:19-56
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:19-54
 activity#com.example.hangman_s176356.endgame.NewGame
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:15:9-53
 	android:name
@@ -144,10 +144,10 @@ activity#com.example.hangman_s176356.animation.Page_01_lottie
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:9-71
 	android:name
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:19-59
-activity#com.example.hangman_s176356.MainPage
+activity#com.example.hangman_s176356.main.MainPage
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:19-43
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
