@@ -1,5 +1,6 @@
 package com.example.hangman_s176356.adapters;
 import com.example.hangman_s176356.R;
+import com.example.hangman_s176356.player.PlayerBuilder;
 import com.example.hangman_s176356.player.UpdatePlayer;
 
 import android.app.Activity;
@@ -63,10 +64,7 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.MyViewHo
                 activity.startActivityForResult(intent, 1);
             }
         });
-
-
-
-
+        
     }
 
     @Override

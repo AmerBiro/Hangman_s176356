@@ -68,7 +68,7 @@ public class CreatePlayer extends AppCompatActivity implements DatePickerDialog.
             }
         });
 
-        binding.playerScore.setOnClickListener(new View.OnClickListener() {
+        binding.playerImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent gallery = new Intent();

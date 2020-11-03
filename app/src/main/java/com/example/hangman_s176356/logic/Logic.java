@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class Logic {
+
+
     /** AHT afprøvning er muligeOrd synlig på pakkeniveau */
     ArrayList<String> muligeOrd = new ArrayList<String>();
     private String ordet;
@@ -66,6 +68,15 @@ public class Logic {
         return spilletErTabt || spilletErVundet;
     }
 
+    public String getFirstandLastLetter(){
+        char [] firstLastLetter = new char[getOrdet().length()];
+        firstLastLetter[0] = getOrdet().charAt(0);
+        firstLastLetter[getOrdet().length()-1] = getOrdet().charAt(getOrdet().length()-1);
+        for (int i = 1; i<getOrdet().length()-1; i++){
+            firstLastLetter[i] = '*';
+        }
+        return new String(firstLastLetter);
+    }
 
     public void startNytSpil() {
         brugteBogstaver.clear();

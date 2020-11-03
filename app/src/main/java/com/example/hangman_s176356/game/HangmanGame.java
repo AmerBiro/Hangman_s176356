@@ -44,6 +44,8 @@ public class HangmanGame extends AppCompatActivity implements View.OnClickListen
         //First we call this
         getAndSetIntentData();
 
+        binding.gusse.setText(logic.getFirstandLastLetter());
+
     }
 
     void getAndSetIntentData(){
