@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.databinding:viewbinding:4.0.0] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\efc5a34c0dc565bd22b30688b8425795\jetified-viewbinding-4.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.2.2] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\356eeaf73087a7fa2393a49623d5b099\navigation-ui-ktx-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\31ab454e11649f26f15d7d1cfec54c96\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
@@ -63,25 +63,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Biro\.gr
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\e5fe1f5aa452bc2293126b692b99b575\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\e2fa498eda9db09d95b9f050957fbe6a\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\62e6572b40ed7c0d3b891feec1645822\jetified-relinker-1.3.1\AndroidManifest.xml:2:1-7:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:5:5-28:19
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\dab0201d7f7215095b21f58cd5000759\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\dab0201d7f7215095b21f58cd5000759\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\Biro\.gradle\caches\transforms-2\files-2.1\0910e768b05548dbba492e18637d2771\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
@@ -120,44 +120,40 @@ activity#com.example.hangman_s176356.endgame.endgame.Won
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:9-57
 	android:name
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:14:19-54
-activity#com.example.hangman_s176356.endgame.NewGame
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:15:9-53
-	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:15:19-50
 activity#com.example.hangman_s176356.player.CreatePlayer
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:15:9-57
+	android:name
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:15:19-54
+activity#com.example.hangman_s176356.player.UpdatePlayer
 ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:16:9-57
 	android:name
 		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:16:19-54
-activity#com.example.hangman_s176356.player.UpdatePlayer
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:17:9-57
-	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:17:19-54
 activity#com.example.hangman_s176356.animation.Page_03_loading
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:18:9-63
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:17:9-63
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:18:19-60
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:17:19-60
 activity#com.example.hangman_s176356.animation.Page_02_hangman_ani
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:19:9-67
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:18:9-76
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:19:19-64
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:18:19-64
 activity#com.example.hangman_s176356.animation.Page_01_lottie
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:9-71
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:19:9-71
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:19-59
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:19:19-59
 activity#com.example.hangman_s176356.main.MainPage
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:19-48
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:20:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\OneDrive - Danmarks Tekniske Universitet\DTU\3. semester\#1 User experience and mobile application development\Android Studio\AndroidStudioProjects\Hangman_s176356\app\src\main\AndroidManifest.xml

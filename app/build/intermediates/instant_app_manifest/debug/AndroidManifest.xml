@@ -23,7 +23,6 @@
         <activity android:name="com.example.hangman_s176356.game.HangmanGame" />
         <activity android:name="com.example.hangman_s176356.endgame.endgame.Lose" />
         <activity android:name="com.example.hangman_s176356.endgame.endgame.Won" />
-        <activity android:name="com.example.hangman_s176356.endgame.NewGame" />
         <activity android:name="com.example.hangman_s176356.player.CreatePlayer" />
         <activity android:name="com.example.hangman_s176356.player.UpdatePlayer" />
         <activity android:name="com.example.hangman_s176356.animation.Page_03_loading" />

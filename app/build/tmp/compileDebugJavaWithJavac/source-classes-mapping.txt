@@ -1,7 +1,7 @@
 com/example/hangman_s176356/databinding/AnimationWonBinding.java
  com.example.hangman_s176356.databinding.AnimationWonBinding
-com/example/hangman_s176356/databinding/FragmentPage03ScorefragmentBinding.java
- com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding
+com/example/hangman_s176356/database/Player.java
+ com.example.hangman_s176356.database.Player
 com/example/hangman_s176356/endgame/endgame/Won.java
  com.example.hangman_s176356.endgame.endgame.Won
  com.example.hangman_s176356.endgame.endgame.Won$1
@@ -12,6 +12,10 @@ com/example/hangman_s176356/databinding/PlayerUpdatePlayerBinding.java
  com.example.hangman_s176356.databinding.PlayerUpdatePlayerBinding
 com/example/hangman_s176356/databinding/GameHangmanBinding.java
  com.example.hangman_s176356.databinding.GameHangmanBinding
+com/example/hangman_s176356/player/PlayerBuilder.java
+ com.example.hangman_s176356.player.PlayerBuilder
+ com.example.hangman_s176356.player.PlayerBuilder$1
+ com.example.hangman_s176356.player.PlayerBuilder$Builder
 com/example/hangman_s176356/animation/Page_02_hangman_ani.java
  com.example.hangman_s176356.animation.Page_02_hangman_ani
  com.example.hangman_s176356.animation.Page_02_hangman_ani$1
@@ -28,8 +32,8 @@ com/example/hangman_s176356/databinding/Animation01LottieBinding.java
 com/example/hangman_s176356/animation/Page_03_loading.java
  com.example.hangman_s176356.animation.Page_03_loading
  com.example.hangman_s176356.animation.Page_03_loading$1
-com/example/hangman_s176356/logic/Logic.java
- com.example.hangman_s176356.logic.Logic
+com/example/hangman_s176356/databinding/PlayerAdapterPlayerListBinding.java
+ com.example.hangman_s176356.databinding.PlayerAdapterPlayerListBinding
 com/example/hangman_s176356/mainpage_fragments/Page02_MainMenuFragment.java
  com.example.hangman_s176356.mainpage_fragments.Page02_MainMenuFragment
  com.example.hangman_s176356.mainpage_fragments.Page02_MainMenuFragment$1
@@ -42,10 +46,11 @@ com/example/hangman_s176356/databinding/FragmentPage01RulesfragmentBinding.java
  com.example.hangman_s176356.databinding.FragmentPage01RulesfragmentBinding
 com/example/hangman_s176356/BuildConfig.java
  com.example.hangman_s176356.BuildConfig
-com/example/hangman_s176356/endgame/endgame/Lose.java
- com.example.hangman_s176356.endgame.endgame.Lose
- com.example.hangman_s176356.endgame.endgame.Lose$1
- com.example.hangman_s176356.endgame.endgame.Lose$2
+com/example/hangman_s176356/player/CreatePlayer.java
+ com.example.hangman_s176356.player.CreatePlayer
+ com.example.hangman_s176356.player.CreatePlayer$1
+ com.example.hangman_s176356.player.CreatePlayer$2
+ com.example.hangman_s176356.player.CreatePlayer$3
 com/example/hangman_s176356/logic/HangmanFactory.java
  com.example.hangman_s176356.logic.HangmanFactory
 com/example/hangman_s176356/databinding/PlayerCreatePlayerBinding.java
@@ -63,16 +68,12 @@ com/example/hangman_s176356/databinding/AnimationLoseBinding.java
  com.example.hangman_s176356.databinding.AnimationLoseBinding
 com/example/hangman_s176356/logic/AbstractHangman.java
  com.example.hangman_s176356.logic.AbstractHangman
-com/example/hangman_s176356/databinding/PlayerAdapterPlayerListBinding.java
- com.example.hangman_s176356.databinding.PlayerAdapterPlayerListBinding
-com/example/hangman_s176356/logic/FactoryProducer.java
- com.example.hangman_s176356.logic.FactoryProducer
 com/example/hangman_s176356/mainpage_fragments/Page03_ScoreFragment.java
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment$1
  com.example.hangman_s176356.mainpage_fragments.Page03_ScoreFragment$2
-com/example/hangman_s176356/database/Player.java
- com.example.hangman_s176356.database.Player
+com/example/hangman_s176356/logic/FactoryProducer.java
+ com.example.hangman_s176356.logic.FactoryProducer
 com/example/hangman_s176356/player/UpdatePlayer.java
  com.example.hangman_s176356.player.UpdatePlayer
  com.example.hangman_s176356.player.UpdatePlayer$1
@@ -80,11 +81,15 @@ com/example/hangman_s176356/player/UpdatePlayer.java
  com.example.hangman_s176356.player.UpdatePlayer$3
  com.example.hangman_s176356.player.UpdatePlayer$4
  com.example.hangman_s176356.player.UpdatePlayer$5
+ com.example.hangman_s176356.player.UpdatePlayer$6
+com/example/hangman_s176356/databinding/FragmentPage03ScorefragmentBinding.java
+ com.example.hangman_s176356.databinding.FragmentPage03ScorefragmentBinding
+com/example/hangman_s176356/logic/Logic.java
+ com.example.hangman_s176356.logic.Logic
+com/example/hangman_s176356/endgame/endgame/Lose.java
+ com.example.hangman_s176356.endgame.endgame.Lose
+ com.example.hangman_s176356.endgame.endgame.Lose$1
+ com.example.hangman_s176356.endgame.endgame.Lose$2
 com/example/hangman_s176356/game/HangmanGame.java
  com.example.hangman_s176356.game.HangmanGame
  com.example.hangman_s176356.game.HangmanGame$1
-com/example/hangman_s176356/player/CreatePlayer.java
- com.example.hangman_s176356.player.CreatePlayer
- com.example.hangman_s176356.player.CreatePlayer$1
- com.example.hangman_s176356.player.CreatePlayer$2
- com.example.hangman_s176356.player.CreatePlayer$3

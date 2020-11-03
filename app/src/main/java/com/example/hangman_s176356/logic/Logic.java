@@ -24,13 +24,13 @@ public class Logic {
 
     public Logic() {
         muligeOrd.add("bil");
-        muligeOrd.add("computer");
-        muligeOrd.add("programmering");
-        muligeOrd.add("motorvej");
-        muligeOrd.add("busrute");
-        muligeOrd.add("gangsti");
-        muligeOrd.add("skovsnegl");
-        muligeOrd.add("solsort");
+//        muligeOrd.add("computer");
+//        muligeOrd.add("programmering");
+//        muligeOrd.add("motorvej");
+//        muligeOrd.add("busrute");
+//        muligeOrd.add("gangsti");
+//        muligeOrd.add("skovsnegl");
+//        muligeOrd.add("solsort");
         muligeOrd.add("tyve");
         startNytSpil();
     }
@@ -68,15 +68,36 @@ public class Logic {
         return spilletErTabt || spilletErVundet;
     }
 
-    public String getFirstandLastLetter(){
-        char [] firstLastLetter = new char[getOrdet().length()];
-        firstLastLetter[0] = getOrdet().charAt(0);
-        firstLastLetter[getOrdet().length()-1] = getOrdet().charAt(getOrdet().length()-1);
-        for (int i = 1; i<getOrdet().length()-1; i++){
-            firstLastLetter[i] = '*';
+    public String getFirstandLastLetter() {
+        char[] firstLastLetter;
+        if (getOrdet().length() < 4) {
+            firstLastLetter = new char[getOrdet().length()];
+            firstLastLetter[0] = getOrdet().charAt(0);
+            for (int i = 1; i < getOrdet().length(); i++) {
+                firstLastLetter[i] = '*';
+            }
+            return new String(firstLastLetter);
+        } else if (getOrdet().length() >= 4){
+            firstLastLetter = new char[getOrdet().length()];
+            firstLastLetter[0] = getOrdet().charAt(0);
+            firstLastLetter[getOrdet().length() - 1] = getOrdet().charAt(getOrdet().length() - 1);
+            for (int i = 1; i < getOrdet().length() - 1; i++) {
+                firstLastLetter[i] = '*';
+            }
+            return new String(firstLastLetter);
         }
-        return new String(firstLastLetter);
+
+
+//            firstLastLetter = new char[getOrdet().length()];
+//            firstLastLetter[0] = getOrdet().charAt(0);
+//            firstLastLetter[getOrdet().length()-1] = getOrdet().charAt(getOrdet().length()-1);
+//            for (int i = 1; i<getOrdet().length()-1; i++){
+//                firstLastLetter[i] = '*';
+//            }
+//            return new String(firstLastLetter);
+        return "";
     }
+
 
     public void startNytSpil() {
         brugteBogstaver.clear();
