@@ -61,9 +61,9 @@ com/example/hangman_s176356/main/MainPage.java
  com.example.hangman_s176356.main.MainPage
 com/example/hangman_s176356/databinding/FragmentPage02MainMenufragmentBinding.java
  com.example.hangman_s176356.databinding.FragmentPage02MainMenufragmentBinding
-com/example/hangman_s176356/animation/Page_01_lottie.java
- com.example.hangman_s176356.animation.Page_01_lottie
- com.example.hangman_s176356.animation.Page_01_lottie$1
+com/example/hangman_s176356/game/HangmanGame.java
+ com.example.hangman_s176356.game.HangmanGame
+ com.example.hangman_s176356.game.HangmanGame$1
 com/example/hangman_s176356/databinding/AnimationLoseBinding.java
  com.example.hangman_s176356.databinding.AnimationLoseBinding
 com/example/hangman_s176356/logic/AbstractHangman.java
@@ -90,6 +90,6 @@ com/example/hangman_s176356/endgame/endgame/Lose.java
  com.example.hangman_s176356.endgame.endgame.Lose
  com.example.hangman_s176356.endgame.endgame.Lose$1
  com.example.hangman_s176356.endgame.endgame.Lose$2
-com/example/hangman_s176356/game/HangmanGame.java
- com.example.hangman_s176356.game.HangmanGame
- com.example.hangman_s176356.game.HangmanGame$1
+com/example/hangman_s176356/animation/Page_01_lottie.java
+ com.example.hangman_s176356.animation.Page_01_lottie
+ com.example.hangman_s176356.animation.Page_01_lottie$1

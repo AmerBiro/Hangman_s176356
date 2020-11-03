@@ -26,14 +26,14 @@
         <activity android:name="com.example.hangman_s176356.player.UpdatePlayer" />
         <activity android:name="com.example.hangman_s176356.animation.Page_03_loading" />
         <activity android:name="com.example.hangman_s176356.animation.Page_02_hangman_ani" />
-        <activity android:name="com.example.hangman_s176356.animation.Page_01_lottie" />
-        <activity android:name="com.example.hangman_s176356.main.MainPage" >
+        <activity android:name="com.example.hangman_s176356.animation.Page_01_lottie" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.hangman_s176356.main.MainPage" />
     </application>
 
 </manifest>

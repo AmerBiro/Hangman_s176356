@@ -16,14 +16,14 @@
         <activity android:name=".player.UpdatePlayer" />
         <activity android:name=".animation.Page_03_loading" />
         <activity android:name=".animation.Page_02_hangman_ani"></activity>
-        <activity android:name=".animation.Page_01_lottie"></activity>
-        <activity android:name=".main.MainPage">
+        <activity android:name=".animation.Page_01_lottie">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".main.MainPage"></activity>
     </application>
 
 </manifest>
