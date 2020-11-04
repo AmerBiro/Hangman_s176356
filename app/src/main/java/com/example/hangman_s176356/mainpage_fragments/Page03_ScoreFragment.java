@@ -1,8 +1,10 @@
 package com.example.hangman_s176356.mainpage_fragments;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -39,8 +41,6 @@ public class Page03_ScoreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentPage03ScorefragmentBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
-
-
 
         myDB = new Player(getActivity());
         playerId = new ArrayList<>();

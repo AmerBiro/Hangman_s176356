@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".mainpage_fragments.Page01_RulesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <VideoView
+        android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="" />
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
